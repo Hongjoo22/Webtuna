@@ -55,19 +55,19 @@ Chart.js를 활용한 데이터 시각화
 
 ### 회원가입 시 선호 그림체 선택
 
-![image](https://user-images.githubusercontent.com/65024497/203679620-d0d8f8ad-a703-47ea-851a-5ee4696de039.png)
+![w1](https://user-images.githubusercontent.com/65024497/203680239-98571f34-9842-4bbd-801d-2c559829b906.gif)
 
 콜드스타트 문제를 방지하기 위해 사전 선호 그림체를 수집한다.
 
 ### 메인 페이지
 
-![image](https://user-images.githubusercontent.com/65024497/203679633-b786ddb4-86ed-4f56-a755-2c017f1f1396.png)
+![w2](https://user-images.githubusercontent.com/65024497/203680282-4c432204-ed5c-44f7-8191-023a4f62b89e.gif)
 
 6가지 그림체 별로 실시간 인기 TOP5 웹툰을 전시한다.
 
 ### 추천 페이지
 
-![image](https://user-images.githubusercontent.com/65024497/203679648-5b67610b-183b-490a-a0f7-4060ff46cc8f.png)
+![w3](https://user-images.githubusercontent.com/65024497/203680298-e9c6732d-b36a-4940-89df-e7c98656ce22.gif)
 
 Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
@@ -75,19 +75,19 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
 ### 명탐정 툰툰이
 
-![image](https://user-images.githubusercontent.com/65024497/203679661-a78c44e0-53a4-4e27-85b2-a45cedc88fdb.png)
+![w4](https://user-images.githubusercontent.com/65024497/203680334-6a1a8847-3cb8-4599-86fb-a5de208ee9e6.gif)
 
 유저가 업로드한 파일의 그림체를 분석하여 학습시킨 데이터를 뽑아내고 유사도가 높은 웹툰을 찾아준다.
 
 ### ToonBTI
 
-![image](https://user-images.githubusercontent.com/65024497/203679671-6af72f0d-0283-426f-bc47-5a0b9a72b79e.png)
+![w5](https://user-images.githubusercontent.com/65024497/203680346-09b95ba7-0bc3-40ad-80dd-85976945205b.gif)
 
 다양한 질문을 통해 유저의 성향을 파악한 뒤, 그것을 기준으로 다양한 웹툰을 추천해준다.
 
 ### 태그 찜 추가 및 삭제
 
-![image](https://user-images.githubusercontent.com/65024497/203679683-32088e48-63dd-4f56-a654-2e5b9855196e.png)
+![w6](https://user-images.githubusercontent.com/65024497/203680369-1853b62d-076b-4fa5-9309-ab6d1888c3ab.gif)
 
 웹툰마다 존재하는 태그들 중 좋아하는 태그를 찜하여 유저의 취향기반 알고리즘에 사용한다.
 
@@ -95,7 +95,7 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
 ### 웹툰 상세 정보
 
-![image](https://user-images.githubusercontent.com/65024497/203679703-34c93c79-a1be-428d-85e0-dee5d4e188c2.png)
+![w6](https://user-images.githubusercontent.com/65024497/203680369-1853b62d-076b-4fa5-9309-ab6d1888c3ab.gif)
 
 웹툰의 작가와 장르 및 줄거리와 같은 기본정보와 태그와 별점, 해당 웹툰을 선호하는 유저들의 정보를 포함한 다양한 분석 그래프도 함께 제공한다.
 
