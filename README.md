@@ -140,17 +140,18 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 <table>
     <tr>
         <td height="140px" align="center">
-            <img src="/uploads/a5d79076583fe2333a635d6b4eae7daf/김영준.jpg" width="140px" /> <br><br> 👑 김영준 <br>(Front-End) </a> <br></td>
+            <img src="https://user-images.githubusercontent.com/65024497/203688204-c681586e-ffed-488f-98e2-0e30f346e6e5.png" width="140px" /> <br><br> 👑 김영준 <br>(Front-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="/uploads/0934f722c4124be33805f003cfcdc532/이동근.jpg" width="140px" /> <br><br> 🙂 이동근 <br>(Front-End) </a> <br></td>
+            <img src="https://user-images.githubusercontent.com/65024497/203688278-03fe7001-af83-4a2d-ba61-274ff991d996.png" width="140px" /> <br><br> 🙂 이동근 <br>(Front-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="/uploads/51d3e99dbbaecdb19c4f48c82c8fa4bf/배윤호.jpg" width="140px" /> <br><br> 😆 배윤호 <br>(Front-End) </a> <br></td>
+            <img src="https://user-images.githubusercontent.com/65024497/203688340-06d24dd6-7471-4f5a-8478-6f22eeb108fd.png
+" width="140px" /> <br><br> 😆 배윤호 <br>(Front-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="/uploads/2de9c544b4221bafa500a6ae52ec3fed/김민성.jpg" width="140px" /> <br><br> 😁 김민성 <br>(Back-End) </a> <br></td>
+            <img src="https://user-images.githubusercontent.com/65024497/203688387-68403955-6288-4280-9f96-3a0c15f11b68.png" width="140px" /> <br><br> 😁 김민성 <br>(Back-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="/uploads/1e655808d8a5b14f7490abc6ad43203e/김우석.jpg" width="140px" /> <br><br> 🙄 김우석 <br>(Back-End) </a> <br></td>
+            <img src="https://user-images.githubusercontent.com/65024497/203688428-79e04c22-5221-497c-bb16-62b94898d763.png" width="140px" /> <br><br> 🙄 김우석 <br>(Back-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="/uploads/43ea7316184eca09106a91e0198f289d/이홍주.jpg" width="140px" /> <br><br> 😶 이홍주 <br>(Back-End) </a> <br></td>
+            <img src="https://user-images.githubusercontent.com/65024497/203688461-5517d663-2aa6-4ddf-8546-7fa284d0c7cb.png" width="140px" /> <br><br> 😶 이홍주 <br>(Back-End) </a> <br></td>
     </tr>
     <tr>
         <td align="center">UI/UX<br/>React<br/>팀장<br/>페이지 반응형</td>
