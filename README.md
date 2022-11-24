@@ -1,6 +1,6 @@
 # README.md
 
-![logo2](/uploads/d4335d16ba0c48cdc17dd821525f016c/logo2.png)
+![image](https://user-images.githubusercontent.com/65024497/203679592-532d66d2-113d-412d-ad6b-a41c3b1d52bb.png)
 
 
 # WebTuna: 웹툰 추천 플랫폼
@@ -55,19 +55,19 @@ Chart.js를 활용한 데이터 시각화
 
 ### 회원가입 시 선호 그림체 선택
 
-![회원가입](/uploads/67b0286453c7c9d488a8cec5a2ff6066/회원가입.gif)
+![image](https://user-images.githubusercontent.com/65024497/203679620-d0d8f8ad-a703-47ea-851a-5ee4696de039.png)
 
 콜드스타트 문제를 방지하기 위해 사전 선호 그림체를 수집한다.
 
 ### 메인 페이지
 
-![메인페이지](/uploads/a2d750334fa6755901063f4f681aa5bf/메인페이지.gif)
+![image](https://user-images.githubusercontent.com/65024497/203679633-b786ddb4-86ed-4f56-a755-2c017f1f1396.png)
 
 6가지 그림체 별로 실시간 인기 TOP5 웹툰을 전시한다.
 
 ### 추천 페이지
 
-![추천](/uploads/5aa7d47b6e081c737f75b5d3faf5098b/추천.gif)
+![image](https://user-images.githubusercontent.com/65024497/203679648-5b67610b-183b-490a-a0f7-4060ff46cc8f.png)
 
 Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
@@ -75,19 +75,19 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
 ### 명탐정 툰툰이
 
-![명탐정툰툰](/uploads/21fab027ed69add64788fdef42a72ffd/명탐정툰툰.gif)
+![image](https://user-images.githubusercontent.com/65024497/203679661-a78c44e0-53a4-4e27-85b2-a45cedc88fdb.png)
 
 유저가 업로드한 파일의 그림체를 분석하여 학습시킨 데이터를 뽑아내고 유사도가 높은 웹툰을 찾아준다.
 
 ### ToonBTI
 
-![toonbti](/uploads/9e62b1894a139d584bd7a60bccd09741/toonbti.gif)
+![image](https://user-images.githubusercontent.com/65024497/203679671-6af72f0d-0283-426f-bc47-5a0b9a72b79e.png)
 
 다양한 질문을 통해 유저의 성향을 파악한 뒤, 그것을 기준으로 다양한 웹툰을 추천해준다.
 
 ### 태그 찜 추가 및 삭제
 
-![태그](/uploads/13bf0dd348eea494830e2e9ce4c957de/태그.gif)
+![image](https://user-images.githubusercontent.com/65024497/203679683-32088e48-63dd-4f56-a654-2e5b9855196e.png)
 
 웹툰마다 존재하는 태그들 중 좋아하는 태그를 찜하여 유저의 취향기반 알고리즘에 사용한다.
 
@@ -95,7 +95,7 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
 ### 웹툰 상세 정보
 
-![디테일페이지](/uploads/f5e1d255c898d184881958d88fc6835a/디테일페이지.gif)
+![image](https://user-images.githubusercontent.com/65024497/203679703-34c93c79-a1be-428d-85e0-dee5d4e188c2.png)
 
 웹툰의 작가와 장르 및 줄거리와 같은 기본정보와 태그와 별점, 해당 웹툰을 선호하는 유저들의 정보를 포함한 다양한 분석 그래프도 함께 제공한다.
 
@@ -129,7 +129,7 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
 ## 서버 아키텍처
 
-![아키텍처](/uploads/15c59549c506dd5cc26ed55e83fdd8d6/아키텍처.png)
+![image](https://user-images.githubusercontent.com/65024497/203679716-95bea983-bbca-4da5-81ad-549e9668b64a.png)
 
 ## 프로젝트 명 : 웹투나
 
