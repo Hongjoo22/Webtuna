@@ -144,8 +144,7 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
         <td height="140px" align="center">
             <img src="https://user-images.githubusercontent.com/65024497/203688278-03fe7001-af83-4a2d-ba61-274ff991d996.png" width="140px" /> <br><br> 🙂 이동근 <br>(Front-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="https://user-images.githubusercontent.com/65024497/203688340-06d24dd6-7471-4f5a-8478-6f22eeb108fd.png
-" width="140px" /> <br><br> 😆 배윤호 <br>(Front-End) </a> <br></td>
+            <img src="https://user-images.githubusercontent.com/65024497/203688523-77a1d298-bb7c-4b0a-be60-bceaeb3f6bde.png" width="140px" /> <br><br> 😆 배윤호 <br>(Front-End) </a> <br></td>
         <td height="140px" align="center">
             <img src="https://user-images.githubusercontent.com/65024497/203688387-68403955-6288-4280-9f96-3a0c15f11b68.png" width="140px" /> <br><br> 😁 김민성 <br>(Back-End) </a> <br></td>
         <td height="140px" align="center">
