@@ -15,7 +15,6 @@ class Author(models.Model):
 class Tag(models.Model):
     tag_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
-<<<<<<< HEAD
 
 
 class Day(models.Model):
@@ -26,9 +25,6 @@ class Day(models.Model):
 class Platform(models.Model):
     platform_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=20)
-=======
-    validation = models.BooleanField(default=True)
->>>>>>> ad07346 (refactor: Naver 웹툰 데이터 삽입 코드 정리)
 
 
 class DrawClassify(models.Model):

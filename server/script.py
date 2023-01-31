@@ -5,11 +5,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tuntun.settings")
 import django
 django.setup()
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import json
->>>>>>> 97b8855 (feat : 카카오페이지 db 업데이트)
 import urllib
 import requests
 import json
@@ -430,38 +426,6 @@ import statistics
     # {'로맨스', '공포/스릴러', '학원/판타지', '로맨스 판타지', '드라마', '액션/무협', '판타지 드라마', '코믹/일상'}
     
     
-=======
-import requests
-import json
-from webtoons.models import Author, Webtoon, Genre
-from bs4 import BeautifulSoup
-
-headers = {'User-Agent':'mozilla/5.0'}
-data = requests.get('https://webtoon.kakao.com/content/트레이스/1047', headers=headers)
-soup = BeautifulSoup(data.text, 'html.parser')
-genre = soup.select_one('#root > main > div > div > div > div.h-full.overflow-hidden.w-full.z-1.fixed.inset-0.bg-dark-background > div.w-full.left-0.top-0.relative > div.content-main-wrapper.opacity-0.invisible.relative.current-content-main.opacity-100.\!visible.z-1 > div.pb-20.pt-96.relative.z-1 > div.relative.mx-auto.my-0.w-full.lg\:w-default-max-width > div.mx-20.flex.justify-between.relative.z-1.pointer-events-auto.pt-12 > div > div > p.whitespace-pre-wrap.break-all.break-words.support-break-word.s12-regular-white.ml-3.opacity-85').text
-print(genre.split("/"))
-# if __name__ == '__main__':
-#     Base_URL = 'https://korea-webtoon-api.herokuapp.com'
-#     path = '/kakao/week'
-
-
-#     response = requests.get(Base_URL+path)
-#     webtoons_popular = response.json()
-#     kakao_genre = set()
-#     for webtoon in webtoons_popular:
-#         try:
-#             webtoon_url = webtoon['url']
-#             # 카카오 장르 크롤링
-#             headers = {'User-Agent':'mozilla/5.0'}
-#             data = requests.get(f'{webtoon_url}', headers=headers)
-#             soup = BeautifulSoup(data.text, 'html.parser')
-#             genre = soup.select_one('#root > main > div > div > div > div.h-full.overflow-hidden.w-full.z-1.fixed.inset-0.bg-dark-background > div.w-full.left-0.top-0.relative > div.content-main-wrapper.opacity-0.invisible.relative.current-content-main.opacity-100.\!visible.z-1 > div.pb-20.pt-96.relative.z-1 > div.relative.mx-auto.my-0.w-full.lg\:w-default-max-width > div.mx-20.flex.justify-between.relative.z-1.pointer-events-auto.pt-12 > div > div > p.whitespace-pre-wrap.break-all.break-words.support-break-word.s12-regular-white.ml-3.opacity-85').text
-#             kakao_genre.add(genre)
-#         except:
-#             pass
-#     print(kakao_genre)
->>>>>>> b984062 (feat: db-kakao)
 
     # # author 데이터 넣기
     # authors = set()
@@ -490,118 +454,6 @@ print(genre.split("/"))
 #         genre_type = genre
 #     )
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
-
-# if __name__ == '__main__':
-#     for j in range(45, 60):
-#         Base_URL = 'https://korea-webtoon-api.herokuapp.com'
-#         path = '/naver/week'
-#         params = {
-#             'api_key' : 'e73cf3371bb27a97420ed90450a7bbce',
-#             'language' : 'ko-KR',
-#             'page' : j,
-#         }
-
-#         response = requests.get(Base_URL+path, params = params)
-#         movie_popular = response.json()
-
-#         for movie in movie_popular['results']:
-#             movie_title = movie['title']
-#             movie_releasedate = movie['release_date']
-#             movie_voteaverage = movie['vote_average']
-#             movie_votecount = movie['vote_count']
-#             movie_posterpath = movie['poster_path']
-#             movie_popularity = int(movie['popularity']*1000)
-#             movie_id = movie['id']
-#             movie_overview = movie['overview']
-#             movie_genre = movie['genre_ids']
-
-#             path=f'/movie/{movie_id}'
-#             params = {
-#             'api_key' : 'e73cf3371bb27a97420ed90450a7bbce',
-#             'language' : 'ko-KR',
-#             }
-#             response2 = requests.get(Base_URL+path, params = params)
-#             movie_detail = response2.json()
-#             movie_runtime = movie_detail['runtime']
-
-#             movie = Movie.objects.create(
-#                 title = movie_title,
-#                 release_date = movie_releasedate,
-#                 popularity = movie_popularity,
-#                 vote_count = movie_votecount,
-#                 vote_average = movie_voteaverage,
-#                 overview = movie_overview,
-#                 poster_path = movie_posterpath,
-#                 runtime = movie_runtime,
-#             )
-#             for i in movie_genre:
-#                 movie.genres.add(i)
-
-# movie = Movie.objects.all()[96]
-
-# title = movie.title
-# params = {
-#     'key': 'AIzaSyA0ZPLyvp_6Eas5z78e0M9mJXEAxOSsBog',
-#     'part': 'snippet',
-#     'q': title + ' official trailer',
-#     'type': 'video',
-#     'maxResults': '1'
-# }
-# URL = "https://www.googleapis.com/youtube/v3/search"
-# response = requests.get(URL, params=params)
-# src = 'https://www.youtube.com/embed/' + \
-#     json.loads(response.text)['items'][0]['id']['videoId']
-# data = {
-#     'src': src+'?autoplay=1&mute=0&enablejsapi=1&controls=0&disablekb=1&modestbranding=1&rel=0&showinfo=0'
-# }
-# movie.src = data['src']
-# movie.save()
-
-
-# m = 15814
-# C = 6.6366635249764325
-
-# if __name__ == '__main__':
-#     for j in range(1, 100):
-#         Base_URL = 'https://api.themoviedb.org/3'
-#         path = '/movie/popular'
-#         params = {
-#             'api_key' : 'e73cf3371bb27a97420ed90450a7bbce',
-#             'language' : 'ko-KR',
-#             'page' : j,
-#         }
-
-#         response = requests.get(Base_URL+path, params = params)
-#         movie_popular = response.json()
-
-#         for movie in movie_popular['results']:
-#             movie_title = movie['title']
-#             new_movie = Movie.objects.filter(title=movie_title)
-#             movie_original_title = movie['original_title']
-#             for i in new_movie:
-#                 i.original_title = movie_original_title
-#                 i.save()
-
-# m = 15814
-# C = 6.6366635249764325
-# movies = Movie.objects.all()
-# for movie in movies:
-#     v = movie.vote_count
-#     R = movie.vote_average
-#     ans = ((v/(v+m))*R) + ((m/(v+m))*C)
-#     movie.wr = ans
-#     movie.save()
->>>>>>> b984062 (feat: db-kakao)
-=======
-webtoon_list = json.load(a)
-=======
->>>>>>> 2ee8aa1 (fix: profile 수정)
 
 # a = open('./Webtoon_Label_6.json', encoding='utf-8-sig')
 
@@ -609,17 +461,6 @@ webtoon_list = json.load(a)
 
 # for webtoons in webtoon_list:
 
-<<<<<<< HEAD
-        toon.update(
-            image_type1 = img_0,
-            image_type2 = img_1,
-            image_type3 = img_2,
-            image_type4 = img_3,
-            image_type5 = img_4,
-            image_type6 = img_5,
-        )
->>>>>>> 953a554 (Feat: 웹툰 그림체 데이터 DB 반영 / 웹툰 상세정보 API 작성)
-=======
 #     webtoon_title = webtoons['img_name']
 #     img_0 = webtoons['0']
 #     img_1 = webtoons['1']
@@ -639,9 +480,6 @@ webtoon_list = json.load(a)
 #             image_type5 = img_4,
 #             image_type6 = img_5,
 #         )
-<<<<<<< HEAD
->>>>>>> 2ee8aa1 (fix: profile 수정)
-=======
 
 ## 카카오페이지 장르 데이터
 # KakaoPageGenreChange = {
@@ -783,9 +621,6 @@ webtoon_list = json.load(a)
 #                     webtoon_data.genres.add(Genre.objects.get(genre_type=genre).genre_id)
             
 #             webtoon_data.platforms.add(Platform.objects.get(name=webtoon_platform).platform_id)
-<<<<<<< HEAD
->>>>>>> 97b8855 (feat : 카카오페이지 db 업데이트)
-=======
 
 
 ## 카카오웹툰 장르 넣기
@@ -865,14 +700,6 @@ webtoon_list = json.load(a)
 #         if type_data != i:
 #             num += 1
 #             webtoon.draw_classifies.add(i)
-<<<<<<< HEAD
-<<<<<<< HEAD
-#     print(num)
->>>>>>> c9803bc (fix : profile 수정, email,nickname 중복확인 수정)
-=======
-#     print(num)
->>>>>>> c5812ab (feat : rating model추가, rating views 수정)
-=======
 #         print(num)
 
 # # 그림체 차이 계산
@@ -983,80 +810,6 @@ webtoon_list = json.load(a)
 #     difference = {"webtoon_id" : comparsion.webtoon_id , "diff" : diff}
 #     return difference
 
-<<<<<<< HEAD
-# # 각 이미지 타입 비율 불러와 차이 계산 후 ((1순위 그림체 *1.1) + (2순위 그림체)) 낮은순으로 top30을 similar에 넣는다
-# for webtoon in webtoon_list:
-#     # 같은 타입애들을 불러오기
-#     classify_list = webtoon.draw_classifies.all()
-#     original_webtoon = Webtoon.objects.filter(pk=webtoon.webtoon_id)
-
-#     # 그림체 분류 id로 불러오기
-#     classify_id_list = []
-#     for classify in classify_list:
-#         classify_id_list.append(classify.classify_id)
-
-#     # 그림체 정보가 1개 넘을 때는 대분류 정했던 로직처럼 similar에 넣어주기
-#     if len(classify_id_list) > 1:
-#         if classify_id_list[0] == 1:
-#             similar_list = Webtoon.objects.filter(image_type1__gte = 95)[:31]
-            
-#         elif classify_id_list[0] == 6:
-#             similar_list = Webtoon.objects.filter(image_type2__gte = 100)[:31]
-
-#         elif classify_id_list[0] == 11:
-#             similar_list = Webtoon.objects.filter(image_type3__gte = 99.99)[:31]
-
-#         elif classify_id_list[0] == 16:
-#             similar_list = Webtoon.objects.filter(image_type4__gte = 95)[:31]
-
-#         elif classify_id_list[0] == 21:
-#             similar_list = Webtoon.objects.filter(image_type5__gte = 99.8)[:31]
-
-#         elif classify_id_list[0] == 26:
-#             similar_list = Webtoon.objects.filter(image_type6__gte = 98)[:31]
-
-#         similar_id_list = []
-#         for similar in similar_list:
-#             similar_id_list.append(similar.webtoon_id)
-        
-#         # 자기 자신 빼주기
-#         if webtoon.webtoon_id in similar_id_list:
-#             similar_id_list.remove(webtoon.webtoon_id)
-        
-#         insert_similar_webtoons = ','.join(str(item) for item in similar_id_list)
-
-#     else:
-#         type_list = Webtoon.objects.filter(draw_classifies__in = classify_id_list)
-        
-#         similar_list = []
-#         for comparsion in type_list:
-#             if(original_webtoon==comparsion):
-#                 continue
-
-#             diffResult = typeToDifference(classify_id_list[0], webtoon, comparsion)
-#             similar_list.append(diffResult)
-        
-#         # 그림체 차이 순으로 정렬
-#         newlist = sorted(similar_list, key = lambda idx: (idx['diff']))
-
-#         # 자기 자신 빼주기
-#         if {"webtoon_id" : webtoon.webtoon_id , "diff" : 0} in newlist:
-#             newlist.remove({"webtoon_id" : webtoon.webtoon_id , "diff" : 0})
-            
-#         insert_similar_webtoons = ','.join([str(item['webtoon_id']) for item in newlist[:30]])
-    
-<<<<<<< HEAD
-    # insert to similar 그림체
-    original_webtoon.update(similar_webtoons=insert_similar_webtoons)
->>>>>>> 1b0b37b (fix: 웹툰 추천 페이지 api 수정 - 한번에 다보내기 / db 설정 부분 scripts.py로 이전)
-=======
-#     # insert to similar 그림체
-#     original_webtoon.update(similar_webtoons=insert_similar_webtoons)
-<<<<<<< HEAD
->>>>>>> 3c6421c (fix: 웹툰 추천 api 수정 - 조건 미달 시 빈 리스트 반환)
-=======
-=======
->>>>>>> 59718a9 (중복 제거)
 
 # tb_draw_classify 삽입
 
@@ -1213,9 +966,6 @@ webtoon_list = json.load(a)
     
 #     # insert to similar 그림체
 #     original_webtoon.update(similar_webtoons=insert_similar_webtoons)
-<<<<<<< HEAD
->>>>>>> 8f9f8be (scripts.py로 이동)
-=======
 
 # QA - Detail 페이지
 # for i in range(1700, 4882):
@@ -1223,7 +973,3 @@ webtoon_list = json.load(a)
 #     # request the API data and convert the JSON to Python data types
 #     webtoons = requests.get(url).json()
 #     print(i)
-<<<<<<< HEAD
->>>>>>> d4f77ed (fix: detail 페이지 수정 - similar 웹툰 없을 때 예외처리)
-=======
->>>>>>> 59718a9 (중복 제거)

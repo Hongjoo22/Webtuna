@@ -1,33 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { useSelector } from 'react-redux'
-
-function UploadResultPage() {
-  const webtoonInfo = useSelector(state => state.upload.webtoonInfo)
-
-  return (
-    <div>
-      <h1>그림체추천 결과 페이지</h1>
-    </div>
-  )
-}
-
-export default UploadResultPage
-=======
-import { useSelector } from "react-redux";
-=======
-import { useEffect } from "react";
-=======
 import { useEffect, useState } from "react";
->>>>>>> 6f89415 (fix: 업로드한 이미지 결과페이지에 그래프 까지 띄웠음)
 import { useDispatch, useSelector } from "react-redux";
-<<<<<<< HEAD
->>>>>>> 1d997a0 (feat: 모델 생성 실패 시 경고창 / 그림체 result페이지 cleanup 추가)
-import { useNavigate } from "react-router-dom";
-=======
 import { useNavigate, useLocation, Navigate } from "react-router-dom";
->>>>>>> 6c63e1b (fix: upload 페이지 새로고침&뒤로가기 시 페이지 이동 구현)
 import styled from "styled-components";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import { cleanResultData } from "../../features/toons/uploadSlice";
@@ -324,4 +297,3 @@ const TextAgain = styled.p`
 `;
 
 export default UploadResultPage;
->>>>>>> c764e92 (feat: 그림체분석 결과페이지 ui / api 연결)

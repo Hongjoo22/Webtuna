@@ -387,13 +387,8 @@ function DetailPage() {
       dispatch(tagLike(e.target.id)).then((res) => {
         if (res.error) {
         } else {
-<<<<<<< HEAD
           dispatch(fetchInfo()).then((res) => {
-            console.log("태그 스위치~");
             sessionStorage.setItem("user", JSON.stringify(res.payload.user));
-=======
-          dispatch(fetchInfo()).then(() => {
->>>>>>> 175aa71 (feat: 프로필페이지 UI 50% 완료)
           });
         }
       });
@@ -401,13 +396,8 @@ function DetailPage() {
       dispatch(tagLike(e.target.parentNode.id)).then((res) => {
         if (res.error) {
         } else {
-<<<<<<< HEAD
           dispatch(fetchInfo()).then((res) => {
-            console.log("태그 스위치~");
             sessionStorage.setItem("user", JSON.stringify(res.payload.user));
-=======
-          dispatch(fetchInfo()).then(() => {
->>>>>>> 175aa71 (feat: 프로필페이지 UI 50% 완료)
           });
         }
       });
@@ -750,22 +740,13 @@ function DetailPage() {
                 <Summary>{webToonInfo.data.summary}</Summary>
               </SubInfo>
             </DetailZone>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            {(webToonInfo.data.tags.length === 0 ||
-              webToonInfo.data.tags === undefined)
-              ? <NoTag></NoTag> :
-=======
-=======
             <MSummary>{webToonInfo.data.summary}</MSummary>
->>>>>>> 2e73c1e (feat: 상세정보 페이지 UI 완료)
             {webToonInfo.data.tags.length === 0 ||
               webToonInfo.data.tags === undefined ? (
               <NoTag>
                 <>태그가 존재하지 않습니다.</>
               </NoTag>
             ) : (
->>>>>>> ae3b8f2 (feat: 프로필&상세페이지 커서 변경)
               <TagZone>
                 {webToonInfo.data.tags.map((tag) =>
                   loginState === null ? (
@@ -884,7 +865,6 @@ function DetailPage() {
                     {count === 1 ? null : (
                       <PrevBtn src={Left} onClick={left} alt="좌"></PrevBtn>
                     )}
-<<<<<<< HEAD
                     {count === slideCount ? null : (
                       <NextBtn src={Right} onClick={right} alt="우"></NextBtn>
                     )}
@@ -933,21 +913,6 @@ function DetailPage() {
                 </SARecommendsBack>
               </Box>
             </SameAuthorRecommendZone>
-=======
-                  </AgeGroupAnalysis>
-                </Analysis>
-                <Graph>
-                  <RatingGraph>
-                    <ChartTitle2>별점 그래프</ChartTitle2>
-                    <ChartShow
-                      data={RatingGraphData}
-                      options={RatingGraphOptions}
-                    ></ChartShow>
-                  </RatingGraph>
-                </Graph>
-              </AnalysisBack>
-            </WebToonAnalysisZone>
->>>>>>> e139eed (fix: 그래프 숫자가아닌 퍼센트로 표시)
           </BackGround>
         </PageBox>
       )}
@@ -1100,15 +1065,6 @@ const RatingButton = styled.div`
   }
 `;
 
-<<<<<<< HEAD
-const ModalTitle = styled.div`
-margin-top: 3vw;
-font-size:2vw;
-`
-
-const StarZone = styled.div`
-margin-top: 2vw;
-=======
 const AlreadyRating = styled.div`
   box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
   font-size: 0.9vw;
@@ -1119,20 +1075,8 @@ const AlreadyRating = styled.div`
   padding: 0.2vw 0.8vw 0.4vw;
   border: 0.2vw solid white;
   border-radius: 0.6vw;
-<<<<<<< HEAD
-  background-color: lightgray;
-  padding: 0.3vw;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 36265cc (fix: 프로필 페이지 조금 수정)
-`
-=======
-=======
-=======
   background-color: #e2e8f0;
->>>>>>> 2e73c1e (feat: 상세정보 페이지 UI 완료)
   cursor: url(${forbidden}) 13 13, auto;
->>>>>>> ae3b8f2 (feat: 프로필&상세페이지 커서 변경)
 `;
 
 const ModalTitle = styled.div`
@@ -1149,7 +1093,6 @@ const ModalTitle = styled.div`
 const StarZone = styled.div`
   margin: 2vw 0;
 `;
->>>>>>> c5f8629 (feat: 프로필 태그 추가 제거)
 
 const Genre = styled.div`
   margin-bottom: 0.4vw;

@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from datetime import timedelta
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
 
-
+    'drf_yasg',
+    
     'django.contrib.admin',
     'django.contrib.sites',
     'django.contrib.auth',
@@ -101,42 +102,11 @@ WSGI_APPLICATION = 'tuntun.wsgi.application'
 
 DATABASES = {
     'default': {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'tuntun',
-    'USER': 'root',
-    'PASSWORD': 'root',
-    'HOST': 'localhost',
-    'PORT': 3306,
-    }
-=======
-=======
->>>>>>> f476a7b (fix : database 코드 수정)
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS' : {
             'read_default_file' : os.path.join(BASE_DIR, 'mysql.cnf')
         }   
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 4ad957b (fix:로그인 수정)
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'tuntun',
-    'USER': 'admin',
-    'PASSWORD': 'hongtun1!',
-    'HOST': 'tuntun.csnx9owbfgoh.ap-northeast-2.rds.amazonaws.com',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-    'PORT': '3306',   
-<<<<<<< HEAD
->>>>>>> 8a5a04a (Change Question in games/models.py)
-=======
->>>>>>> 4ad957b (fix:로그인 수정)
-=======
->>>>>>> f476a7b (fix : database 코드 수정)
     },
->>>>>>> 0d8b258 (fix: settings.py에서 mysql.cnf 인식못하는 오류 수정 및 쓸모없는 파일 지우기)
 }
 
 
@@ -194,16 +164,7 @@ REST_AUTH_REGISTER_SERIALIZERS = {
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
-<<<<<<< HEAD
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',
-    ),
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    )
-}
-=======
+
 SITE_ID = 1
 REST_USE_JWT = True
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None # username 필드 사용 x
@@ -218,44 +179,11 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
-<<<<<<< HEAD
->>>>>>> 4ad957b (fix:로그인 수정)
-=======
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(hours=3),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> f81c1cd (fix: 회원 로그인/로그아웃 등 수정)
-=======
->>>>>>> f476a7b (fix : database 코드 수정)
-=======
-
-# SECURITY     -   http     
-<<<<<<< HEAD
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
-SECURE_SSL_REDIRECT = True #     SSL        SSL
-SESSION_COOKIE_SECURE = True #    https  cookie
-CSRF_COOKIE_SECURE = True #    https  cookie
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True #       https    
-SECURE_HSTS_PRELOAD = True # HSTS 
-SECURE_HSTS_SECONDS = 60
-SECURE_CONTENT_TYPE_NOSNIFF = True
->>>>>>> cc8563b (chore: ssl 관련 settings 추가)
-=======
-# SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
-# SECURE_SSL_REDIRECT = True #     SSL        SSL
-# SESSION_COOKIE_SECURE = True #    https  cookie
-# CSRF_COOKIE_SECURE = True #    https  cookie
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = True #       https    
-# SECURE_HSTS_PRELOAD = True # HSTS 
-# SECURE_HSTS_SECONDS = 60
-# SECURE_CONTENT_TYPE_NOSNIFF = True
->>>>>>> 23dfc89 (chore: 잠시 주석처리)
-=======
 
 SWAGGER_SETTINGS = {
     'SECURITY_DEFINITIONS' :{
@@ -266,4 +194,3 @@ SWAGGER_SETTINGS = {
         }
     }
 }
->>>>>>> 259428a (chore: swagger authorization 설정 추가)

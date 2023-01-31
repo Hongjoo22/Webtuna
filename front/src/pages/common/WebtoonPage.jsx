@@ -16,31 +16,14 @@ import {
   changeTag,
   changeIsLoad,
   changePossibleFetch,
-<<<<<<< HEAD
 } from "../../features/toons/filterSlice";
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { changeCurrentpage } from "../../features/toons/navBarSlice";
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-import { changeCurrentpage } from "../../features/toons/navBarSlice";
->>>>>>> add08c0 (feat: 깃 풀 오리진 프론트)
-=======
->>>>>>> ec27d10 (fix: 하단 Navbar 가운데 추천 버튼 수정)
-=======
->>>>>>> 6140013 (fix: QA 웹툰 잡아오는 중 가운데로 (미디어 쿼리는 적용 X),)
 import { getTags } from "../../features/toons/searchSlice";
->>>>>>> f8cfcbc (feat: 필터에 태그 추가)
 import styled from "styled-components";
 import AllToonList from "../../components/toonlist/AllToonList";
 import ModalFrame from "../../components/common/ModalFrame";
 import ToonLoading from "../../components/toonlist/ToonLoading";
-<<<<<<< HEAD
-=======
 import MoveTop from "../../components/common/MoveTop";
->>>>>>> b2ff74b (fix: 무한스크롤 수정)
 import Fish_0 from "../../assets/filter/fish0.png";
 import Fish_1 from "../../assets/filter/fish1.png";
 import Fish_2 from "../../assets/filter/fish2.png";
@@ -48,20 +31,6 @@ import Fish_3 from "../../assets/filter/fish3.png";
 import Fish_4 from "../../assets/filter/fish4.png";
 import Fish_5 from "../../assets/filter/fish5.png";
 import { forbidden } from "../../assets/cursor/cursorItem";
-=======
-} from "../../features/toons/filterSlice"
-import styled from 'styled-components'
-import AllToonList from "../../components/toonlist/AllToonList"
-import ModalFrame from "../../components/common/ModalFrame"
-import ToonLoading from "../../components/toonlist/ToonLoading"
-import MoveTop from "../../components/common/MoveTop"
-import Fish_0 from "../../assets/filter/fish0.png"
-import Fish_1 from "../../assets/filter/fish1.png"
-import Fish_2 from "../../assets/filter/fish2.png"
-import Fish_3 from "../../assets/filter/fish3.png"
-import Fish_4 from "../../assets/filter/fish4.png"
-import Fish_5 from "../../assets/filter/fish5.png"
->>>>>>> 9e0eee3 (feat: 무한스크롤 있는 페이지에 최상단 이동 버튼 추가)
 
 function WebtoonPage() {
   sessionStorage.setItem("url", "/webtoonlist");

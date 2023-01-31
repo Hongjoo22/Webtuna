@@ -14,13 +14,6 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-<<<<<<< HEAD
-from django.urls import path, include
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/accounts/', include('accounts.urls')),
-=======
 from django.urls import path, include, re_path
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
@@ -45,17 +38,7 @@ urlpatterns = [
     re_path(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     re_path(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('admin/', admin.site.urls),
+    path('api/accounts/', include('accounts.urls')),
     path('api/webtoons/', include('webtoons.urls')),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5965471 (feat: 웹툰 상세,  전체 목록, 검색(제목, 작성자) API 개발)
-=======
     path('api/games/', include('games.urls')),
->>>>>>> 86fecf2 (Fix game api ver_0.5)
-=======
-    path('api/v1/accounts/', include('dj_rest_auth.urls')),
->>>>>>> 4ad957b (fix:로그인 수정)
-=======
->>>>>>> f81c1cd (fix: 회원 로그인/로그아웃 등 수정)
 ]

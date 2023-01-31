@@ -1,6 +1,6 @@
 # README.md
 
-![image](https://user-images.githubusercontent.com/65024497/203679592-532d66d2-113d-412d-ad6b-a41c3b1d52bb.png)
+![logo2](/uploads/d4335d16ba0c48cdc17dd821525f016c/logo2.png)
 
 
 # WebTuna: 웹툰 추천 플랫폼
@@ -55,19 +55,19 @@ Chart.js를 활용한 데이터 시각화
 
 ### 회원가입 시 선호 그림체 선택
 
-![w1](https://user-images.githubusercontent.com/65024497/203680239-98571f34-9842-4bbd-801d-2c559829b906.gif)
+![회원가입](/uploads/67b0286453c7c9d488a8cec5a2ff6066/회원가입.gif)
 
 콜드스타트 문제를 방지하기 위해 사전 선호 그림체를 수집한다.
 
 ### 메인 페이지
 
-![w2](https://user-images.githubusercontent.com/65024497/203680282-4c432204-ed5c-44f7-8191-023a4f62b89e.gif)
+![메인페이지](/uploads/a2d750334fa6755901063f4f681aa5bf/메인페이지.gif)
 
 6가지 그림체 별로 실시간 인기 TOP5 웹툰을 전시한다.
 
 ### 추천 페이지
 
-![w3](https://user-images.githubusercontent.com/65024497/203680298-e9c6732d-b36a-4940-89df-e7c98656ce22.gif)
+![추천](/uploads/5aa7d47b6e081c737f75b5d3faf5098b/추천.gif)
 
 Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
@@ -75,19 +75,19 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
 ### 명탐정 툰툰이
 
-![w4](https://user-images.githubusercontent.com/65024497/203680334-6a1a8847-3cb8-4599-86fb-a5de208ee9e6.gif)
+![명탐정툰툰](/uploads/21fab027ed69add64788fdef42a72ffd/명탐정툰툰.gif)
 
 유저가 업로드한 파일의 그림체를 분석하여 학습시킨 데이터를 뽑아내고 유사도가 높은 웹툰을 찾아준다.
 
 ### ToonBTI
 
-![w5](https://user-images.githubusercontent.com/65024497/203680346-09b95ba7-0bc3-40ad-80dd-85976945205b.gif)
+![toonbti](/uploads/9e62b1894a139d584bd7a60bccd09741/toonbti.gif)
 
 다양한 질문을 통해 유저의 성향을 파악한 뒤, 그것을 기준으로 다양한 웹툰을 추천해준다.
 
 ### 태그 찜 추가 및 삭제
 
-![w6](https://user-images.githubusercontent.com/65024497/203680369-1853b62d-076b-4fa5-9309-ab6d1888c3ab.gif)
+![태그](/uploads/13bf0dd348eea494830e2e9ce4c957de/태그.gif)
 
 웹툰마다 존재하는 태그들 중 좋아하는 태그를 찜하여 유저의 취향기반 알고리즘에 사용한다.
 
@@ -95,7 +95,7 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
 ### 웹툰 상세 정보
 
-![w6](https://user-images.githubusercontent.com/65024497/203680369-1853b62d-076b-4fa5-9309-ab6d1888c3ab.gif)
+![디테일페이지](/uploads/f5e1d255c898d184881958d88fc6835a/디테일페이지.gif)
 
 웹툰의 작가와 장르 및 줄거리와 같은 기본정보와 태그와 별점, 해당 웹툰을 선호하는 유저들의 정보를 포함한 다양한 분석 그래프도 함께 제공한다.
 
@@ -129,7 +129,7 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 
 ## 서버 아키텍처
 
-![image](https://user-images.githubusercontent.com/65024497/203679716-95bea983-bbca-4da5-81ad-549e9668b64a.png)
+![아키텍처](/uploads/15c59549c506dd5cc26ed55e83fdd8d6/아키텍처.png)
 
 ## 프로젝트 명 : 웹투나
 
@@ -140,17 +140,17 @@ Collaborative Filtering(Item-based Filtering & User-based Filtering) 추천
 <table>
     <tr>
         <td height="140px" align="center">
-            <img src="https://user-images.githubusercontent.com/65024497/203688204-c681586e-ffed-488f-98e2-0e30f346e6e5.png" width="140px" /> <br><br> 👑 김영준 <br>(Front-End) </a> <br></td>
+            <img src="/uploads/a5d79076583fe2333a635d6b4eae7daf/김영준.jpg" width="140px" /> <br><br> 👑 김영준 <br>(Front-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="https://user-images.githubusercontent.com/65024497/203688278-03fe7001-af83-4a2d-ba61-274ff991d996.png" width="140px" /> <br><br> 🙂 이동근 <br>(Front-End) </a> <br></td>
+            <img src="/uploads/0934f722c4124be33805f003cfcdc532/이동근.jpg" width="140px" /> <br><br> 🙂 이동근 <br>(Front-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="https://user-images.githubusercontent.com/65024497/203688523-77a1d298-bb7c-4b0a-be60-bceaeb3f6bde.png" width="140px" /> <br><br> 😆 배윤호 <br>(Front-End) </a> <br></td>
+            <img src="/uploads/51d3e99dbbaecdb19c4f48c82c8fa4bf/배윤호.jpg" width="140px" /> <br><br> 😆 배윤호 <br>(Front-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="https://user-images.githubusercontent.com/65024497/203688387-68403955-6288-4280-9f96-3a0c15f11b68.png" width="140px" /> <br><br> 😁 김민성 <br>(Back-End) </a> <br></td>
+            <img src="/uploads/2de9c544b4221bafa500a6ae52ec3fed/김민성.jpg" width="140px" /> <br><br> 😁 김민성 <br>(Back-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="https://user-images.githubusercontent.com/65024497/203688428-79e04c22-5221-497c-bb16-62b94898d763.png" width="140px" /> <br><br> 🙄 김우석 <br>(Back-End) </a> <br></td>
+            <img src="/uploads/1e655808d8a5b14f7490abc6ad43203e/김우석.jpg" width="140px" /> <br><br> 🙄 김우석 <br>(Back-End) </a> <br></td>
         <td height="140px" align="center">
-            <img src="https://user-images.githubusercontent.com/65024497/203688461-5517d663-2aa6-4ddf-8546-7fa284d0c7cb.png" width="140px" /> <br><br> 😶 이홍주 <br>(Back-End) </a> <br></td>
+            <img src="/uploads/43ea7316184eca09106a91e0198f289d/이홍주.jpg" width="140px" /> <br><br> 😶 이홍주 <br>(Back-End) </a> <br></td>
     </tr>
     <tr>
         <td align="center">UI/UX<br/>React<br/>팀장<br/>페이지 반응형</td>

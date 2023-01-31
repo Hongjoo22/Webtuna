@@ -31,33 +31,7 @@ def ProfileUpdate(request):
     return Response(True)
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-# 프로필 보기
-=======
-# class UserLogin(LoginView):
-#     permission_classes = (AllowAny,)
-#     serializer_class = LoginSerializer
-    
-#     def post(self, request):
-#         user = request.data
-
-#         serializer = self.serializer_class(data=user)
-#         serializer.is_valid(raise_exception=True)
-
-#         return Response(serializer.data, status=status.HTTP_200_OK)
-
-
-
->>>>>>> 4ad957b (fix:로그인 수정)
-=======
-=======
-# 비밀번호 수정하기
-=======
 # 프로필 이미지 수정하기
->>>>>>> 6f6e1b6 (프로필 이미지 수정하기 )
 @api_view(['PUT'])
 def ProfileImage(request):
     member = get_object_or_404(get_user_model(), id=request.user.id)
@@ -67,9 +41,7 @@ def ProfileImage(request):
     return Response(True)
 
     
->>>>>>> cb5751b (feat : 프로필 이미지 수정)
 # 프로필 정보 받기
->>>>>>> f81c1cd (fix: 회원 로그인/로그아웃 등 수정)
 @api_view(['GET'])
 def Profile(request):
     member = get_object_or_404(get_user_model(), id=request.user.id)
@@ -222,26 +194,4 @@ def PasswordCheck(request):
 # def TestUser(request):
 #     Webtoon
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-#     serializer = TestUserSerializer(member)
-#     # member_lst = Member_View_Webtoons.objects.filter(member_id=request.user.id).order_by('id')
-#     # print(member_lst)
-    
-<<<<<<< HEAD
-<<<<<<< HEAD
-# @api_view(['POST'])
-=======
-@api_view(['GET'])
-def Test_req(request):
-    print(request.user)
->>>>>>> 2ee8aa1 (fix: profile 수정)
-=======
-#     return Response(serializer.data)
->>>>>>> c9803bc (fix : profile 수정, email,nickname 중복확인 수정)
-=======
 #     return Response(True)
->>>>>>> 70f416e (fix : log남기기 수정)
-=======
-#     return Response(True)
->>>>>>> cb5751b (feat : 프로필 이미지 수정)

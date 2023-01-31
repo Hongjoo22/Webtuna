@@ -9,20 +9,9 @@ import {
   changeLoginState,
   changeCurrentUser,
 } from "./features/accounts/loginSlice";
-<<<<<<< HEAD
-import ModalFrame from "./components/common/ModalFrame";
-import ClickSound from "../src/music/571119__elfstonepress__boing-sfx.mp3";
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import Today from "./components/common/Today";
->>>>>>> 5aa3ecb (feat: 오늘의 운세 안 닫히게 / 카드 클릭 시 운세 / 상세 페이지 이동)
-=======
-import style from "./App.css";
->>>>>>> e8e608b (feat: 마우스 클릭시 효과 추가)
-=======
+import ClickSound from "../src/music/571119__elfstonepress__boing-sfx.mp3";
 import "./App.css";
->>>>>>> 17c4c6a (feat: 운세 미리보기 삭제 /  audio관련 eslint에러)
 
 function App() {
   const dispatch = useDispatch();
@@ -41,12 +30,6 @@ function App() {
   const isLoading = useSelector((state) => state.search.isLoading);
   const isPossibleModal = useSelector((state) => state.login.isPossibleModal);
   const isLockyModal = useSelector((state) => state.login.luckyModal);
-
-<<<<<<< HEAD
-  function switchModal() {
-    dispatch(changeIsPossibleModal(false));
-    dispatch(changeLuckyModal(false));
-  }
 
   function test() {
     clickSound.play();
@@ -69,23 +52,10 @@ function App() {
       <div onClick={test}>
         <GlobalStyle />
         <HeaderBar></HeaderBar>
-        {isPossibleModal && isLockyModal && (
-          <ModalFrame _handleModal={switchModal}>
-            <ModalTitle>당신의 운세를 확인해드립니다!</ModalTitle>
-          </ModalFrame>
-        )}
+        {isPossibleModal && isLockyModal && <Today></Today>}
         {isLoading ? <Loading></Loading> : <Outlet></Outlet>}
         <NavBar></NavBar>
       </div>
-=======
-  return (
-    <>
-      <GlobalStyle />
-      <HeaderBar></HeaderBar>
-      {isPossibleModal && isLockyModal && <Today></Today>}
-      {isLoading ? <Loading></Loading> : <Outlet></Outlet>}
-      <NavBar></NavBar>
->>>>>>> 5aa3ecb (feat: 오늘의 운세 안 닫히게 / 카드 클릭 시 운세 / 상세 페이지 이동)
     </>
   );
 }
