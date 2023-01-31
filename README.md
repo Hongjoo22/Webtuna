@@ -1,6 +1,6 @@
 # README.md
 
-![logo2](/uploads/d4335d16ba0c48cdc17dd821525f016c/logo2.png)
+![image](https://user-images.githubusercontent.com/65024497/203679592-532d66d2-113d-412d-ad6b-a41c3b1d52bb.png)
 
 
 # WebTuna: 웹툰 추천 플랫폼
@@ -55,7 +55,7 @@ Chart.js를 활용한 데이터 시각화
 
 ### 회원가입 시 선호 그림체 선택
 
-![회원가입](/uploads/67b0286453c7c9d488a8cec5a2ff6066/회원가입.gif)
+![image](https://user-images.githubusercontent.com/65024497/203679620-d0d8f8ad-a703-47ea-851a-5ee4696de039.png)
 
 콜드스타트 문제를 방지하기 위해 사전 선호 그림체를 수집한다.
 
